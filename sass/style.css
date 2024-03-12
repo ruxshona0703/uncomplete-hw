@@ -21,6 +21,7 @@ ul {
   background-color: #f3f5f7;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-size: 0.874rem;
 }
 .header .head__first-part p {
   font-family: "Inter", sans-serif;
@@ -82,6 +83,7 @@ ul {
   }
   .material-symbols-outlined {
     display: block;
+    cursor: pointer;
   }
   .icon-container a {
     display: none;
@@ -89,8 +91,34 @@ ul {
   .icon-container a:last-child {
     display: block;
   }
+  .head__first-part {
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+  }
 }
 .make-inline {
   display: flex;
   gap: 4px;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+dialog {
+  position: relative;
+  width: 40vw;
+  height: 100vh;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+dialog nav {
+  display: block;
+}
+dialog .icon-container a {
+  display: inline;
 }/*# sourceMappingURL=style.css.map */

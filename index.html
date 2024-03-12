@@ -22,7 +22,7 @@
         </div>
         <div class="head__second-part wrapper">
             <div class="make-inline">
-                <span class="material-symbols-outlined">
+                <span id="menuBtn" class="material-symbols-outlined">
                     menu
                 </span>
                 <a href="index.html"><img src="imgs/Logo (3).svg" alt="logo"></a>
@@ -50,6 +50,28 @@
             <img class="image-container" src="imgs/interior.png" alt="interior">
         </section>
     </main>
+    <dialog id="dialog">
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#home">shop</a></li>
+                <li><a href="#home">product</a></li>
+                <li><a href="#home">contact us</a></li>
+            </ul>
+            <button id="close">Close</button>
+        </nav>
+        <div class="icon-container">
+            <a href="search"><img class="arrow__right" src="imgs/search 02.svg" alt="search"></a>
+            <a href="account"><img class="arrow__left" src="imgs/user-circle.svg" alt="account"></a>
+        </div>
+    </dialog>
 </body>
+<script>
+    const dialog = document.getElementById("dialog")
+    const menuBtn = document.getElementById("menuBtn")
+    const closed = document.getElementById("close")
 
+    menuBtn.onclick = ()=> dialog.showModal()
+    closed.onclick = ()=> dialog.close()
+</script>
 </html>
