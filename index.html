@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="head__first-part">
@@ -41,13 +42,41 @@
                 <a href="account"><img class="arrow__left" src="imgs/user-circle.svg" alt="account"></a>
                 <a href="shoppingbag"><img src="imgs/Right.svg" alt="shoppingbag"></a>
             </div>
-           
+
         </div>
     </header>
 
     <main>
         <section class="interior wrapper">
             <img class="image-container" src="imgs/interior.png" alt="interior">
+        </section>
+
+        <section class="products-container">
+           <div class="descript-title wrapper">
+            <h1>Simply Unique/
+                Simply Better.</h1>
+            <p><span>3legant</span> is a gift & decorations store based in HCMC, Vietnam. Est since 2019. </p>
+           </div>
+           <div class="products wrapper">
+            <div class="product">
+                <img src="imgs/Image Placeholder2.svg" alt="card">
+                <p>Living room</p>
+                <a href="#">Shop now <img src="imgs/arrow-right.jpg" alt="arrow-right"></a>
+            </div>
+            
+            <div class="product-flex">
+                <div class="product">
+                    <img src="imgs/Image Placeholder.svg" alt="cardboard">
+                    <p>Bedroom</p>
+                    <a href="#">Shop now <img src="imgs/arrow-right.jpg" alt="arrow-right"></a>
+                </div>
+                <div class="product">
+                    <img src="imgs/Image Placeholder.png" alt="#">
+                    <p>Kitchen</p>
+                    <a href="#">Shop now <img src="imgs/arrow-right.jpg" alt="arrow-right"></a>
+                </div>
+            </div>
+           </div>
         </section>
     </main>
     <dialog id="dialog">
@@ -71,7 +100,8 @@
     const menuBtn = document.getElementById("menuBtn")
     const closed = document.getElementById("close")
 
-    menuBtn.onclick = ()=> dialog.showModal()
-    closed.onclick = ()=> dialog.close()
+    menuBtn.onclick = () => dialog.showModal()
+    closed.onclick = () => dialog.close()
 </script>
+
 </html>

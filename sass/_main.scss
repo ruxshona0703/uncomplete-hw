@@ -11,6 +11,12 @@
 }
 
 @media screen and (max-width: 550px) {
+  .image-container {
+    position: relative;
+    display: block; 
+    width: min(95vw, 1120px); 
+    margin: auto;
+  }
   nav {
     display: none;
   }
