@@ -1,11 +1,37 @@
-.interior {
-   img{
-    position: relative  ;
-   }
-  a .arrow__left{
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    left: 32px;
+.material-symbols-outlined {
+  display: none;
+  font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+}
+
+.image-container {
+  position: relative;
+  display:block; /* Ensures container takes up only as much space as needed */
+  width: min(95vw ,1120px);
+  margin: auto;
+}
+
+@media screen and (max-width:550px){
+  nav{
+    display: none;
+  }
+  .material-symbols-outlined{
+    display: block;
+  }
+
+  .icon-container a{
+    display: none;
+  }
+  .icon-container a:last-child{
+    display: block;
   }
 }
+
+.make-inline{
+  display: flex;
+  gap: 4px;
+}
+
